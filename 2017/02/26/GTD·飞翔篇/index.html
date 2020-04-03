@@ -945,7 +945,7 @@
       repo: 'B1amer.github.io',
       owner: 'B1amer',
       admin: ['B1amer'],
-      id: location.pathname,
+      id: decodeURI(location.pathname),
       distractionFreeMode: 'false'
     })
     gitalk.render('gitalk-container')
